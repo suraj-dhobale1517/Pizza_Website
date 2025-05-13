@@ -1,0 +1,163 @@
+/* MENU CONTAINER */
+.menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 0;
+  background-color: #fafafa;
+  transition: background-color 0.3s ease-in-out;
+}
+h1.menu-title{
+  text-align: center;
+}
+
+.menu:hover {
+  background-color: #f0f0f0;
+}
+
+/* MENU TITLE */
+.menu .menuTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 2.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.menuTitle:hover {
+  transform: scale(1.05);
+}
+
+/* GRID LAYOUT */
+.menuList {
+  width: 80%;
+  margin: 3rem auto; /* ✅ center grid */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  transition: transform 0.3s ease;
+}
+
+.menuList:hover {
+  transform: scale(1.02);
+}
+
+@media only screen and (max-width: 1300px) {
+  .menuList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .menuList {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* MENU ITEM STYLING */
+.menuItem {
+  display: flex;
+  flex-direction: row; /* ✅ Horizontal layout */
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 220px;
+  border-radius: 15px;
+  background: #ffffff;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.4s ease, background-color 0.3s ease;
+}
+
+.menuItem:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+  background-color: #f7f7f7;
+}
+
+/* MENU ITEM IMAGE */
+.menuItem .image {
+  width: 40%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.menuItem .image:hover {
+  transform: scale(1.05);
+}
+
+/* MENU ITEM TEXT */
+.menuItem .content {
+  width: 55%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menuItem h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 10px;
+  text-align: left;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menuItem p {
+  font-size: 1.1rem;
+  color: #ff6f00;
+  font-weight: 700;
+  margin: 0;
+  text-align: left;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menuItem h1:hover,
+.menuItem p:hover {
+  color: #f57c00;
+  transform: translateY(-5px);
+}
+
+/* ORDER NOW BUTTON */
+.menuItem button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff8f00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menuItem button:hover {
+  background-color: #f57c00;
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menuItem button:focus {
+  outline: none;
+  box-shadow: 0px 0px 6px rgba(255, 114, 0, 0.8);
+}

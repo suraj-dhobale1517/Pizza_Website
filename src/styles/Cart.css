@@ -1,0 +1,172 @@
+/* General styles for the Cart page */
+.cart-wrapper {
+  background-color: #ffffff; /* White background */
+  min-height: 100vh;
+  padding: 4rem 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Cart container */
+.cart-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9fafb; /* Light gray background */
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-container:hover {
+  transform: translateY(-5px); /* Hover effect */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Cart title */
+.cart-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  color: #2d3748;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Table styling */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 3rem;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #4a5568; /* Darker text */
+}
+
+.cart-table th {
+  background-color: #f3f4f6;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4c51bf;
+}
+
+.cart-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.cart-table tr:hover {
+  background-color: #e2e8f0;
+  cursor: pointer;
+}
+
+/* Item image */
+.cart-item-img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons for increasing/decreasing quantity */
+.quantity-btn {
+  background-color: #38b2ac; /* Teal */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+
+.quantity-btn:hover {
+  background-color: #319795; /* Darker teal */
+  transform: scale(1.1);
+}
+
+/* Delete button */
+.delete-btn {
+  background-color: #e53e3e; /* Red */
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+}
+
+.delete-btn:hover {
+  background-color: #c53030;
+  transform: scale(1.05);
+}
+
+/* Total Price Styling */
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.cart-total h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #4c51bf; /* Indigo */
+}
+
+.cart-total p {
+  font-size: 1.1rem;
+  color: #4a5568;
+  font-weight: 600;
+}
+
+/* Checkout button */
+.checkout-btn {
+  background-color: #4c51bf;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1.25rem;
+}
+
+.checkout-btn:hover {
+  background-color: #434190;
+  transform: scale(1.05);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .cart-table th,
+  .cart-table td {
+    padding: 1rem;
+  }
+
+  .cart-item-img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .quantity-btn {
+    font-size: 1.25rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .delete-btn,
+  .checkout-btn {
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .cart-total h2 {
+    font-size: 1.5rem;
+  }
+}
