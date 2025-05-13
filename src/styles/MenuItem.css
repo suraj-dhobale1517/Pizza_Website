@@ -2,12 +2,13 @@
 .menu-item {
   width: 100%;
   max-width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc; /* Subtle border around the item */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Hide any content that overflows */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: 10px;
+  margin: 10px; /* Spacing between items */
+  background-color: white; /* White background for the item */
 }
 
 /* Hover effect for the menu item */

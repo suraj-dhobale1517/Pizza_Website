@@ -1,15 +1,22 @@
 /* MENU CONTAINER */
-.menu {
+.menu-container {
   width: 100%;
-  height: auto;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   padding: 4rem 0;
-  background-color: #fafafa;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),  /* Reduced opacity of gradient to 0.5 */
+      rgba(255, 255, 255, 0.5)   /* Reduced opacity of gradient to 0.5 */
+    ),
+    url('../assets/multiplePizzas.jpeg'); /* Updated path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   transition: background-color 0.3s ease-in-out;
 }
+
 h1.menu-title{
   text-align: center;
 }
@@ -66,13 +73,13 @@ h1.menu-title{
 /* MENU ITEM STYLING */
 .menuItem {
   display: flex;
-  flex-direction: row; /* ✅ Horizontal layout */
+  flex-direction: row; /* Horizontal layout */
   align-items: center;
   justify-content: space-between;
   width: 100%;
   height: 220px;
   border-radius: 15px;
-  background: #ffffff;
+  background-color: #ffffff; /* Set card background color to white */
   overflow: hidden;
   position: relative;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
@@ -83,7 +90,7 @@ h1.menu-title{
 .menuItem:hover {
   transform: translateY(-10px);
   box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
-  background-color: #f7f7f7;
+  /* Removed background-color change to keep it white on hover */
 }
 
 /* MENU ITEM IMAGE */
@@ -94,11 +101,13 @@ h1.menu-title{
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 12px;
-  transition: transform 0.3s ease;
+  opacity: 0.9; /* Keep image opacity at 90% */
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .menuItem .image:hover {
   transform: scale(1.05);
+  opacity: 1; /* Image becomes fully visible on hover */
 }
 
 /* MENU ITEM TEXT */

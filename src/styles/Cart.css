@@ -109,16 +109,18 @@
 
 /* Total Price Styling */
 .cart-total {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2rem;
+  display: flex; /* Flexbox layout */
+  justify-content: end; /* Aligns content to the right (end of the container) */
+  align-items: center; /* Vertically centers the content */
+  margin-top: 2rem; /* Adds spacing at the top */
+  margin-right: 4rem;
 }
 
 .cart-total h2 {
   font-size: 1.8rem;
   font-weight: 700;
   color: #4c51bf; /* Indigo */
+  
 }
 
 .cart-total p {

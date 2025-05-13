@@ -47,6 +47,7 @@
   border-radius: 15px;
   background-size: cover;
   background-position: center;
+  background-image: url('../assets/pepperoni.jpg'); /* Add your image path here */
   transition: transform 0.3s ease;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
